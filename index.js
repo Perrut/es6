@@ -1,10 +1,15 @@
-const Message = require('./message.model');
-const ImageMessage = require('./image-message.model');
+const numbers = [1, 2, 3, 4, 5];
+
+console.log(numbers.filter(n => n > 4));
+
+console.log(numbers.reduce((acum, current) => acum + current, 10));
+
+console.log(numbers.find(n => n === 3));
+
+/* existe Set (single values) e Map (value key) no js es6 */
+/* const Message = require('./message.model');
 const fs = require('fs');
 const path = require('path');
-
-const emptyMessage = new Message();
-const emptyPhotoMessage = new ImageMessage();
 
 class MessagesService {
   constructor() {
@@ -20,9 +25,8 @@ class MessagesService {
         rejectPromise(err);
       } else {
         const dataArray = JSON.parse(data);
-        const dataObj = dataArray.map((item) => {
-          return new Message(item.text, item.created);
-        });
+        const dataObj = dataArray.map(item => 
+          new Message(item.text, item.created));
         resolvePromise(dataObj);
       }
     });
@@ -36,13 +40,13 @@ class MessagesService {
 const messagesService = new MessagesService();
 messagesService.messages
   .then((messages) => {
-    for (let x = 0; x < messages.length; x++) {
+    for (let x = 0; x < messages.length; x += 1) {
       console.log(String(messages[x]));
     }
   }).catch((err) => {
     console.log(err);
   });
-
+ */
 /* class Message {
   constructor(text = '', created = Date.now()){
     this.text = text;
