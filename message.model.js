@@ -1,4 +1,4 @@
-class Message {
+export class Message {
   constructor(text = '', created = Date.now()){
     this.text = text;
     this._created = created;
@@ -16,5 +16,3 @@ class Message {
     return `Message created at: ${this.created} - Text: ${this.text}`;
   }
 }
-
-module.exports = Message;
