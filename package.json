@@ -4,8 +4,10 @@
   "description": "A simple bunch of examples used as an overview about ES6 (ECMAScript 2015)",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon",
-    "lint": "eslint"
+    "start": "http-server",
+    "lint": "eslint",
+    "build": "webpack --watch --devtool source-map",
+    "nodemon": "nodemon"
   },
   "repository": {
     "type": "git",
@@ -26,6 +28,8 @@
     "eslint": "^3.14.0",
     "eslint-config-airbnb-base": "^13.1.0",
     "eslint-plugin-import": "^2.14.0",
-    "nodemon": "^1.11.0"
+    "http-server": "^0.9.0",
+    "nodemon": "^1.11.0",
+    "webpack": "^2.2.1"
   }
 }
