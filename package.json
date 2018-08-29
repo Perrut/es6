@@ -17,7 +17,10 @@
   "keywords": [
     "ES6",
     "ECMASscript2015",
-    "ES2015"
+    "ES2015",
+    "ES6 modules",
+    "Webpack",
+    "Webpack 2"
   ],
   "author": "Jose Berardo Cunha",
   "license": "ISC",
