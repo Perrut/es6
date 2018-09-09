@@ -60,7 +60,7 @@
 /******/ 	__webpack_require__.o = function(object, property) { return Object.prototype.hasOwnProperty.call(object, property); };
 /******/
 /******/ 	// __webpack_public_path__
-/******/ 	__webpack_require__.p = "";
+/******/ 	__webpack_require__.p = "dist/";
 /******/
 /******/ 	// Load entry module and return exports
 /******/ 	return __webpack_require__(__webpack_require__.s = 1);
@@ -109,6 +109,9 @@ const m = new __WEBPACK_IMPORTED_MODULE_0__models_image_message_model__["a" /* d
 
 console.log('not empty');
 console.dir(m);
+console.log('updated');
+/* webpack-dev-server roda o projeto na memória, atualiza sozinho, mas só client-side, se envolver 
+servidor não rola, não é servidor web completo */
 
 
 /***/ }),
@@ -144,4 +147,3 @@ module.exports = Message;
 
 /***/ })
 /******/ ]);
-//# sourceMappingURL=bundle.js.map
