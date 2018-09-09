@@ -144,3 +144,4 @@ module.exports = Message;
 
 /***/ })
 /******/ ]);
+//# sourceMappingURL=bundle.js.map
